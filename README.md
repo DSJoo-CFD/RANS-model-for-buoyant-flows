@@ -135,7 +135,7 @@ $\dfrac{D \overline{\theta^{2}}}{D t}
 At no-slip walls, $k=\varepsilon=\overline{\theta^2}=0$ should be imposed as Dirichlet boundary conditions.
 
 
-## Notes
+# Notes
 This code is written based on OpenFOAM's solver, "buoyantBoussinesqSimpleFoam".
 
 All model constants and material properties (except for gravity) are defined in  "constant/transportProperties".
