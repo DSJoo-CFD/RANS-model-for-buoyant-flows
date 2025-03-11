@@ -49,6 +49,15 @@ Simply navigate to the example directory and execute:
   > sh ./Allclean
   
   > sh ./Allrun
+ 
+
+## Notes
+This code is written based on OpenFOAM's solver, "buoyantBoussinesqSimpleFoam".
+
+All model constants and material properties (except for gravity) are defined in  "constant/transportProperties".
+
+For instance, if you want to change the model constant to $C_{\varepsilon g}=1$, add the following line to "constant/transportProperties":
+> Cepsg 1;
 
 
 # Model equations
@@ -78,7 +87,7 @@ $\dfrac{D k}{D t} = -\overline{u_i u_j} \dfrac{\partial U_i}{\partial x_j}
 
  $\dfrac{D \varepsilon}{D t} =
 	C_{\varepsilon1}\dfrac{\varepsilon}{k} \left(-\overline{u_i u_j} \dfrac{\partial U_i}{\partial x_j} \right)
-	+ C_{\varepsilon g} f_{\varepsilon g}  \dfrac{\varepsilon}{k} \left(- g_i \beta \overline{\theta u_i}\right)
+	+ C_{\varepsilon g}  \dfrac{\varepsilon}{k} \left(- g_i \beta \overline{\theta u_i}\right)
 	- C_{\varepsilon2} f_\varepsilon \dfrac{\varepsilon^{2}}{k}
 	+ \dfrac{\partial }{\partial x_i} 
 	\left( \left(\nu + \dfrac{\nu_t}{\sigma_\varepsilon}\right) \dfrac{\partial \varepsilon}{\partial x_i}  \right),$
@@ -103,6 +112,7 @@ $\mathit{Re}_{t} = {k^{2}}/({\nu \varepsilon})$.
 
 The standard coefficients are $C_{\varepsilon1} = 1.44$, $C_{\varepsilon2} = 1.92$,	$C_{\mu} = 0.09$, $\sigma_k = 1.0$, $\sigma_\varepsilon = 1.3$.
 
+For the buoyancy-related coefficient \( C_{\varepsilon g} \), there is no consensus on a standard value.  Here, \( C_{\varepsilon g} = 1.44 \) is set as the default.  
 
 If the turbulent heat flux is modeled using the gradient diffusion hypothesis, which is the most commonly used approach, it is expressed as:
 
@@ -131,6 +141,20 @@ $\dfrac{D \overline{\theta^{2}}}{D t}
 
  
 At no-slip walls, $k=\varepsilon=\overline{\theta^2}=0$ should be imposed as Dirichlet boundary conditions.
+
+The model constants are named in the code as follows:
+$\nu$ (nu); 
+$C_\mu$ (Cmu);
+$C_{\varepsilon 1}$ (Ceps1);
+$C_{\varepsilon 2}$ (Ceps2);
+$C_{\varepsilon g}$ (Cepsg);
+$\sigma_k$ (sigmaK);
+$\sigma_\varepsilon$ (sigmaEps);
+$C_\theta$ (Ct);
+$\xi$ (Cxi);
+$\eta$ (Ceta);
+$R$ (CR);
+
 
 # Numerical methods for stability
 Details can be found at [https://arxiv.org/abs/2501.12973]
