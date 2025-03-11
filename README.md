@@ -143,8 +143,12 @@ All model constants and material properties (except for gravity) are defined in 
 For instance, if you want to change the model constant to $C_{\varepsilon g}=1$, add the following line to "constant/transportProperties":
 > Cepsg 1;
 
-The material properties and model constants are named in the code as follows:
+The variables, material properties, and model constants are named in the code as follows:
 
+$k$ (k);
+$\varepsilon$ (epsilon);
+$\overline{\theta^2}$ (Tvar);
+$\overline{\theta u_i}$ (thf);
 $\nu$ (nu); 
 $\alpha$ (alpha);
 $\beta$ (beta);
