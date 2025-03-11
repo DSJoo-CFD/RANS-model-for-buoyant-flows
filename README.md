@@ -142,8 +142,11 @@ $\dfrac{D \overline{\theta^{2}}}{D t}
  
 At no-slip walls, $k=\varepsilon=\overline{\theta^2}=0$ should be imposed as Dirichlet boundary conditions.
 
-The model constants are named in the code as follows:
+The material properties and model constants are named in the code as follows:
 $\nu$ (nu); 
+$\alpha$ (alpha);
+$\beta$ (beta);
+$Q$ (Q);
 $C_\mu$ (Cmu);
 $C_{\varepsilon 1}$ (Ceps1);
 $C_{\varepsilon 2}$ (Ceps2);
