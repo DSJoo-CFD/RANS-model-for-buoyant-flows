@@ -135,9 +135,9 @@ $\dfrac{D \overline{\theta^{2}}}{D t}
 	= - 2 \overline{\theta u_{i}} \dfrac{\partial T}{\partial x_i}
 	- \dfrac{1}{R} \dfrac{\overline{\theta^2}}{k}\left( \varepsilon + \varepsilon_0\right) 
 	+ \dfrac{\partial }{\partial x_i} 
-	\left( \left(\alpha + \dfrac{\nu_t}{\sigma_\theta}\right) \dfrac{\partial \overline{\theta^{2}}}{\partial x_i}  \right).$
+	\left( \left(\alpha + \dfrac{\nu_t}{\mathit{Pr}_t}\right) \dfrac{\partial \overline{\theta^{2}}}{\partial x_i}  \right).$
 
- The model constants are $C_{\theta} = 0.15$, $\xi=0.6$, $\eta=0.6$, $R=0.75$, $\sigma_\theta=1.0$.
+ The model constants are $C_{\theta} = 0.15$, $\xi=0.6$, $\eta=0.6$, $R=0.75$, $\mathit{Pr}_t=1.0$.
 
  
 At no-slip walls, $k=\varepsilon=\overline{\theta^2}=0$ should be imposed as Dirichlet boundary conditions.
@@ -154,6 +154,7 @@ $C_\theta$ (Ct);
 $\xi$ (Cxi);
 $\eta$ (Ceta);
 $R$ (CR);
+$\mathit{Pr}_t$ (Prt)
 
 
 # Numerical methods for stability
