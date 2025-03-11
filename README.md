@@ -51,14 +51,6 @@ Simply navigate to the example directory and execute:
   > sh ./Allrun
  
 
-## Notes
-This code is written based on OpenFOAM's solver, "buoyantBoussinesqSimpleFoam".
-
-All model constants and material properties (except for gravity) are defined in  "constant/transportProperties".
-
-For instance, if you want to change the model constant to $C_{\varepsilon g}=1$, add the following line to "constant/transportProperties":
-> Cepsg 1;
-
 
 # Model equations
 The following turbulence models are implemented together:
@@ -142,7 +134,17 @@ $\dfrac{D \overline{\theta^{2}}}{D t}
  
 At no-slip walls, $k=\varepsilon=\overline{\theta^2}=0$ should be imposed as Dirichlet boundary conditions.
 
+
+## Notes
+This code is written based on OpenFOAM's solver, "buoyantBoussinesqSimpleFoam".
+
+All model constants and material properties (except for gravity) are defined in  "constant/transportProperties".
+
+For instance, if you want to change the model constant to $C_{\varepsilon g}=1$, add the following line to "constant/transportProperties":
+> Cepsg 1;
+
 The material properties and model constants are named in the code as follows:
+
 $\nu$ (nu); 
 $\alpha$ (alpha);
 $\beta$ (beta);
