@@ -22,7 +22,7 @@ Then, create the necessary directories for running OpenFOAM by executing:
 
   > mkdir -p $WM_PROJECT_USER_DIR/{run,applications,src}
 
-Next, overwrite the provided source codes by copying the provided files into the appropriate location.
+Next, overwrite the provided source code (folders named "run" and "applications") by copying the provided files into the appropriate locations.
 
 ## 3. Compile the Solver
 In a Linux environment, compile the solver located in "applications/mybuoyantBoussinesqSimpleFoam" by running the following commands sequentially:
@@ -36,7 +36,7 @@ In a Linux environment, compile the solver located in "applications/mybuoyantBou
   > wmake
 
 ## 4. Run the Examples  
-The "run" folder contains the problems validated in the paper. 
+The "run" folder contains some example problems. 
 
 You can run these examples just like any conventional OpenFOAM tutorial. 
 
