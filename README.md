@@ -104,7 +104,7 @@ $\mathit{Re}_{t} = {k^{2}}/({\nu \varepsilon})$.
 
 The standard coefficients are $C_{\varepsilon1} = 1.44$, $C_{\varepsilon2} = 1.92$,	$C_{\mu} = 0.09$, $\sigma_k = 1.0$, $\sigma_\varepsilon = 1.3$.
 
-For the buoyancy-related coefficient \( C_{\varepsilon g} \), there is no consensus on a standard value.  Here, \( C_{\varepsilon g} = 1.44 \) is set as the default.  
+For the buoyancy-related coefficient $C_{\varepsilon g}$, there is no consensus on a standard value.  Here, $C_{\varepsilon g} = 1.44$ is set as the default.  
 
 If the turbulent heat flux is modeled using the gradient diffusion hypothesis, which is the most commonly used approach, it is expressed as:
 
