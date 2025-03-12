@@ -130,13 +130,14 @@ $\dfrac{D \overline{\theta^{2}}}{D t}
 	\left( \left(\alpha + \dfrac{\nu_t}{\mathit{Pr}_t}\right) \dfrac{\partial \overline{\theta^{2}}}{\partial x_i}  \right).$
 
  The model constants are $C_{\theta} = 0.15$, $\xi=0.6$, $\eta=0.6$, $R=0.75$, $\mathit{Pr}_t=1.0$.
-
  
 At no-slip walls, $k=\varepsilon=\overline{\theta^2}=0$ should be imposed as Dirichlet boundary conditions.
 
 
 # Notes
 This code is written based on OpenFOAM's solver, "buoyantBoussinesqSimpleFoam".
+
+The aforementioned specific values of model constants are set as default, but they can be modified.
 
 All model constants and material properties (except for gravity) are defined in  "constant/transportProperties".
 
