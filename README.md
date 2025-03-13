@@ -27,9 +27,9 @@ Next, overwrite the provided source code (folders named "run" and "applications"
 ## 3. Compile the Solver
 In a Linux environment, compile the solver located in "applications/mybuoyantBoussinesqSimpleFoam" by running the following commands sequentially:
 
-  > app
+  > run
 
-  > cd mybuoyantBoussinesqSimpleFoam
+  > cd ../applications/mybuoyantBoussinesqSimpleFoam
   
   > wclean
   
